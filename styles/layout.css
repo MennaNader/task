@@ -1,0 +1,53 @@
+.flex {
+    display: flex;
+}
+
+.row,
+.col {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.col-1 {
+    flex: 1;
+}
+
+.col-2 {
+    flex: 2;
+}
+
+.col-3 {
+    flex: 3;
+}
+
+.col-4 {
+    flex: 4;
+}
+
+.col-offset-1 {
+    margin-left: 8.33333%;
+}
+
+.col-offset-2 {
+    margin-left: 16.66667%;
+}
+
+.col-offset-3 {
+    margin-left: 25%;
+}
+
+.col-offset-4 {
+    margin-left: 33.33333%;
+}
+
+.center {
+    margin: auto;
+    padding: 10px;
+}
