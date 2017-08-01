@@ -11,13 +11,17 @@ var animationContainer = document.getElementsByClassName("animation_playground")
     timeline = new TimelineLite({ onUpdate: updateSlider }).pause();
 
 timeline
+    .set(cloud, { x: -500 })
+    .set(title, { x: -500 })
+    .set(house, { y: 600 });
+
+timeline
     .fromTo(green_bubble, 1, { y: -100, scale: 0 }, { y: 0, scale: 1 }, 0.01)
     .fromTo(red_bubble, 1, { y: 500, x: -100, scale: 0 }, { y: 0, x: 0, scale: 1 }, 0)
-    .fromTo(house, 1, { y: 600 }, { y: 10 }, 0)
-    .fromTo(cloud, 1, { x: -500 }, { x: -10 }, 0)
-    .fromTo(title, 1, { x: -500 }, { x: 0 }, 1)
-    .to(cloud, 3, { ease: Bounce.easeInOut, x: 0 }, 0.3)
-    .to(house, 3, { ease: Bounce.easeInOut, y: 0 }, 0.3)
+    .to(house, 1, { y: 10 }, 0)
+    .to(cloud, 1, { x: -10 }, 0)
+    .to(title, 1, { x: 0 }, 0)
+    .to(animationContainer, 4, { ease: Bounce.easeOut, scale: 1.1 }, 0)
     .fromTo(green_bubble, 1, { x: 0, y: 0 }, { x: 500, y: 200, scale: 0 }, 4.5)
     .fromTo(red_bubble, 1, { x: 0, y: 0 }, { x: 500, y: 200, scale: 0 }, 4.5)
     .fromTo(house, 1, { x: 0, y: 0 }, { x: 500, y: 200, scale: 0 }, 4.5)

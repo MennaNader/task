@@ -20,6 +20,28 @@ select {
     -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 ul {
     list-style: none;
+}
+
+#control {
+    position: absolute;
+    left: 2.5%;
+    width: 95%;
+    top: 90%;
+}
+
+#slider {
+    background-color: #444;
+}
+
+#play_btn,
+.play {
+    float: right;
+    margin-top: 20px;
 }
